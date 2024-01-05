@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    
+
+    <script>
+
+        // start of image slider
+
+//         let slideIndex = 1;
+// showSlides(slideIndex);
+
+// function plusSlides(n) {
+//   showSlides(slideIndex += n);
+// }
+
+// function currentSlide(n) {
+//   showSlides(slideIndex = n);
+// }
+
+// function showSlides(n) {
+//   let i;
+//   let slides = document.getElementsByClassName("mySlides");
+//   let dots = document.getElementsByClassName("dot");
+//   if (n > slides.length) {slideIndex = 1}    
+//   if (n < 1) {slideIndex = slides.length}
+//   for (i = 0; i < slides.length; i++) {
+//     slides[i].style.display = "none";  
+//   }
+//   for (i = 0; i < dots.length; i++) {
+//     dots[i].className = dots[i].className.replace(" active", "");
+//   }
+//   slides[slideIndex-1].style.display = "block";  
+//   dots[slideIndex-1].className += " active";
+// }
+// end of image slider
+
+// onmouseover and onmouseout for images
+
+// function bigImg(x) {
+//   x.style.height = "230px";
+//   x.style.width = "230px";
+// }
+
+// function normalImg(x) {
+//   x.style.height = "200px";
+//   x.style.width = "200px";
+// }
+// end of onmouseover and onmouseout for images
+// function myFunction() {
+//   var dots = document.getElementById("dots");
+//   var moreText = document.getElementById("more");
+//   var btnText = document.getElementById("myBtn");
+
+//   if (dots.style.display === "none") {
+//     dots.style.display = "inline";
+//     btnText.innerHTML = "Read more"; 
+//     moreText.style.display = "none";
+//   } else {
+//     dots.style.display = "none";
+//     btnText.innerHTML = "Read less"; 
+//     moreText.style.display = "inline";
+//   }
+// }
+
+function addToCart()
+{
+    alert("Login to add the product to cart");
+}
+
+    </script>
+</head>
+<body>
+
+        <!-- Start of  navigation menu -->
+    <div class="navigationbar"> 
+        <div class="menu">
+            <!-- <a href="#">
+                <i class="fa fa-bars"></i>
+            </a> -->
+            <a href="index.html"> 
+                <i class="fa fa-fw fa-home"></i>
+                 Home
+                </a>
+    </div>
+       <div id="navitem"> 
+        
+        <a href="Wishlist.html">
+            <i class="fa fa-fw fa-heart"></i>
+            Wish List
+        </a>
+        
+        <a href="Add_to_cart.html">
+            <i class="fa fa-cart-plus"></i>
+            Add to Cart
+        </a>
+        <a href="#">
+            <input type="text">
+            <i class="fa fa-search"></i>
+        </a>
+        <a href="mailto:sharulathar001@gmail.com">
+          Help
+            <i class="fa fa-fw fa-question"></i>
+           
+        </a>
+        <a href="login_form.html">
+          <i class="fa fa-fw fa-user"></i>
+         Login
+        </a>
+        </div>
+</div>
+
+<!-- end of  navigation menu -->
+    <br><br>
+
+    <!-- start of image slider -->
+       
+    <!-- <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 4</div>
+          <img src="images.html/offer.jpeg" style="width:100%" height="100%">
+          <div class="text">Pongal Sale</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 4</div>
+          <img src="images.html/offer1.webp" style="width:100%" height="100%">
+          <div class="text">Grab Soon</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 4</div>
+          <img src="images.html/offer2.jpeg" style="width:100%" height="100%">
+          <div class="text">Don't Miss it out</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 4</div>
+          <img src="images.html/offer3.jpeg" style="width:100%" height="100%">
+          <div class="text">Limited Products</div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div> 
+        <br>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>  
+          </div>-->
+ <!-- end of image slider -->
+
+
+                <p class="header"><b>
+                    <i class="fa fa-fw fa-heart"></i>
+                    Best for Makeup Products
+                    <i class="fa-sharp fa-solid fa-shop"></i>
+                </b></p>
+                
+                <br><br>
+<!-- start of grid  -->
+                <div class="grid-container">
+                    <a href="FaceMask.html"><div class="product">Face mask </div></a>
+                    <a href="EyeMakeup.html"><div class="product">Eye Makeup</div></a>
+                    <a href="LipsMakeup.html"><div class="product">Lips Makeup</div></a>
+                    <a href="CreamProducts.html"><div class="product">Cream Products</div></a>
+                    <a href="Foundations.html"><div class="product">Foundations</div></a>
+                    <a href="Primers.html"><div class="product">Primers</div></a>
+                    <a href="Blushes.html"><div class="product">Blushes</div></a>
+                    <a href="Moisturizer.html"><div class="product">Moisturizer</div></a>
+                    <a href="SunScreen.html"><div class="product">Sun Screen</div></a>
+                </div>
+                
+    <!-- end of grid -->
+
+        <header class="head"><b>Products for you</b></header>
+         <div class="image">
+            <figure>
+                
+                <div class="container">
+                    <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="images.html/foundation.jpeg" alt="foundation image" class="image" width="200" height="200">
+                    <div class="overlay">
+                    <a href="#4r2" class="icon" title="User Profile">
+                      <i class="fa fa-fw fa-heart"></i>
+                    </a>
+                    </div>
+                  
+                <figcaption>
+
+                    Foundation 
+                    <details>
+                        <summary>Product Details</summary>
+                        <p>
+                            A natural formula for foundation that gives an even<span id="dots">...</span><span id="more"> glow, all while keeping your skin nourished and super healthy.</span>
+                        </p>
+                        <button onclick="myFunction()" id="myBtn">Read more</button>
+                      </details>
+                    <a href="login_form.html"><input type="button"  name="button"  id="addtocart"class="button"  value=" Add to Cart" onclick="addToCart()"> </a>
+                    <a href="checkout.html"><input type="button"  name="button"  class="button"value=" Buy Now"> </a>
+                </figcaption>
+              </div>
+            </figure>
+
+            <figure>
+
+                <div class="container">
+                    <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="images.html/eyeshadow.webp" alt="eyeshadow image" class="image" width="200" height="200">
+                    <div class="overlay">
+                    <a href="#4r2" class="icon" title="User Profile">
+                      <i class="fa fa-fw fa-heart"></i>
+                    </a>
+                    </div>
+                  </div>
+                <figcaption >
+                    EyeShadow palette 
+                    <details>
+                        <summary>Product Details</summary>
+                        <p>
+                            Eyeshadow 18 Color Palette, Shimmer <span id="dots">...</span><span id="more">and Matte Shades for Eye Makeup.</span>
+                        </p>
+                        <button onclick="myFunction()" id="myBtn">Read more</button>
+                      </details>
+                    <a href="login_form.html"><input type="button"  name="button"  class="button" id="addtocart" value=" Add to Cart" onclick="addToCart()"> </a>
+                    <a href="checkout.html"><input type="button"  name="button"  class="button"  value=" Buy Now"> </a>
+                </figcaption>
+            </figure>
+
+            <figure>
+                <div class="container">
+                    <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="images.html/primer.webp" alt="primer image" class="image" width="200" height="200">
+                    <div class="overlay">
+                    <a href="#4r2" class="icon" title="User Profile">
+                      <i class="fa fa-fw fa-heart"></i>
+                    </a>
+                    </div>
+                  </div>
+                <figcaption>
+                    Primer
+                        <details>
+                            <summary>Product Details</summary>
+                            <p>
+                                Primer color correcting primer preps for makeup<span id="dots">...</span><span id="more"> application by visually blurring away specific skin concerns.</span>
+                            </p>
+                            <button onclick="myFunction()" id="myBtn">Read more</button>
+                        </details>
+                    <a href="login_form.html"><input type="button"  name="button"  class="button" id="addtocart" value=" Add to Cart" onclick="addToCart()"> </a>
+                    <a href="checkout.html"><input type="button"  name="button"  class="button"  value=" Buy Now"> </a>
+                </figcaption>
+            </figure> 
+            
+            <figure>
+                <div class="container">
+                    <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="images.html/loose powder.jpeg" alt="loose powder image" class="image" width="200" height="200">
+                    <div class="overlay">
+                    <a href="#4r2" class="icon" title="User Profile">
+                      <i class="fa fa-fw fa-heart"></i>
+                    </a>
+                    </div>
+                  </div>
+                <figcaption>
+                    Loose powder
+                    <details>
+                        <summary>Product Details</summary>
+                        <p>
+                            The 15 Best Setting Powders to Handle Shine,<span id="dots">...</span><span id="more"> Sweat, and Beyond</span>
+                        </p>
+                        <button onclick="myFunction()" id="myBtn">Read more</button>
+                    </details>
+                    <a href="login_form.html"><input type="button"  name="button"  class="button" id="addtocart" value=" Add to Cart" onclick="addToCart()"> </a>
+                    <a href="checkout.html"><input type="button"  name="button"  class="button"  value=" Buy Now"> </a>
+                </figcaption>
+            </figure> 
+
+            <figure>
+                <div class="container">
+                    <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="images.html/Moisturizer.webp" alt="Moisturizer image" class="image" width="200" height="200">
+                    <div class="overlay">
+                    <a href="#4r2" class="icon" title="User Profile">
+                      <i class="fa fa-fw fa-heart"></i>
+                    </a>
+                    </div>
+                  </div>
+                <figcaption>
+                    Moisturizer 
+                    <details>
+                        <summary>Product Details</summary>
+                        <p>
+                            Vitamin C + E Moisturizer With Sicilian Blood Orange<span id="dots">...</span><span id="more"> & Triple Vitamin C| Fades Pigmentation & Dark Spots| Oily & Dry Skin| For Skin Glow</span>                        </p>
+                        <button onclick="myFunction()" id="myBtn">Read more</button>
+                    </details>
+                    <a href="login_form.html"><input type="button"  name="button"  class="button" id="addtocart" value=" Add to Cart" onclick="addToCart()"> </a>
+                    <a href="checkout.html"><input type="button"  name="button"  class="button"  value=" Buy Now"> </a>
+                </figcaption>
+            </figure> 
+
+            <figure>
+                <div class="container">
+                    <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="images.html/sunscreen.jpeg" alt="sunscreen image" class="image" width="200" height="200">
+                    <div class="overlay">
+                    <a href="#4r2" class="icon" title="User Profile">
+                      <i class="fa fa-fw fa-heart"></i>
+                    </a>
+                    </div>
+                  </div>
+                <figcaption>
+                    Sun Screen
+                    <details>
+                        <summary>Product Details</summary>
+                        <p>
+                            Sun Expert Fairness & UV Lotion
+Has cucumber<span id="dots">...</span><span id="more"> and lemon grass extracts with skin lightening properties, vitamin B3 to lighten skin tone
+Shields upto 97% of UVB rays that cause sunburns
+Suitable for normal to dry skin
+Has SPF 30</span>
+                        </p>
+                        <button onclick="myFunction()" id="myBtn">Read more</button>
+                    </details> 
+                    <a href="login_form.html"><input type="button"  name="button"  class="button" id="addtocart" value=" Add to Cart" onclick="addToCart()"> </a>
+                    <a href="checkout.html"><input type="button"  name="button"  class="button"  value=" Buy Now"> </a>
+                </figcaption>
+            </figure> 
+
+            <figure>
+                <div class="container">
+                    <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="images.html/face cream.jpeg" alt="face cream.jpeg" class="image" width="200" height="200">
+                    <div class="overlay">
+                    <a href="#4r2" class="icon" title="User Profile">
+                      <i class="fa fa-fw fa-heart"></i>
+                    </a>
+                    </div>
+                  </div>
+                <figcaption>
+                    Face cream
+                    <details>
+                        <summary>Product Details</summary>
+                        <p>
+                            Sustainable Whiteglow Skin Whitening Brightening SPF<span id="dots">...</span><span id="more">25++ Gel Creme</span>
+                        </p>
+                        <button onclick="myFunction()" id="myBtn">Read more</button>
+                    </details>
+                    <a href="Add_to_cart.html"><input type="button"  name="button"  class="button"id="addtocart" value=" Add to Cart" onclick="addToCart()"> </a>
+                    <a href="checkout.html"><input type="button"  name="button"  class="button"  value=" Buy Now"> </a>
+                </figcaption>
+            </figure> 
+
+            <figure>
+                <div class="container">
+                    <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="images.html/kajal.webp" alt="kajal image" class="image" width="200" height="200">
+                    <div class="overlay">
+                    <a href="#4r2" class="icon" title="User Profile">
+                      <i class="fa fa-fw fa-heart"></i>
+                    </a>
+                    </div>
+                  </div>
+                <figcaption>
+                    Kajal 
+                    <details>
+                        <summary>Product Details</summary>
+                        <p>
+                            The Barva Skin Therapie Kajal Eyeliner/Kajal Pencil is<span id="dots">...</span><span id="more">, 100% natural and highly-
+                            pigmented., Enriched with the goodness of organic cow ghee.</span>
+                        </p>
+                        <button onclick="myFunction()" id="myBtn">Read more</button>
+                    </details>
+                    <a href="Add_to_cart.html"><input type="button"  name="button"  class="button" id="addtocart" value=" Add to Cart" onclick="addToCart()"> </a>
+                    <a href="checkout.html"><input type="button"  name="button"  class="button"  value=" Buy Now"> </a>
+                </figcaption>
+            </figure> 
+        </div>
+    </body>
+</html>

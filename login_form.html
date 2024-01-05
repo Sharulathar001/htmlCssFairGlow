@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="login_form.css">
+    <title>Document</title>
+    <script type="text/javascript">
+		function validateForm() {
+  var username = document.forms["loginForm"]["username"].value;
+  var password = document.forms["loginForm"]["password"].value;
+
+  // Validate username
+  if (username == "") {
+    document.getElementById("usernameError").innerHTML = "Please enter username.";
+    return false;
+  } else if (username.length < 5) {
+    document.getElementById("usernameError").innerHTML = "Please enter username with atleast 5 characters";
+    return false;
+  } else {
+    document.getElementById("usernameError").innerHTML = "";
+  }
+
+  // Validate password
+  if (password == "") {
+    document.getElementById("passwordError").innerHTML = "Please enter password.";
+    return false;
+  } else if (password.length < 8) {
+    document.getElementById("passwordError").innerHTML = "Please enter password with atleast 8 characters";
+    return false;
+  } else {
+    document.getElementById("passwordError").innerHTML = "";
+  }
+
+  // Validation succeeded
+  return true;
+}
+
+
+	</script>
+<body>
+    <!-- Start of  navigation menu -->
+    <div class="navigationbar"> 
+        <div class="menu">
+            <!-- <a href="#">
+                <i class="fa fa-bars"></i>
+            </a> -->
+            <a href="index.html"> 
+                <i class="fa fa-fw fa-home"></i>
+                 Home
+                </a>
+    </div>
+       <div id="navitem"> 
+        
+        <a href="Wishlist.html">
+            <i class="fa fa-fw fa-heart"></i>
+            Wish List
+        </a>
+        
+        <a href="Add_to_cart.html">
+            <i class="fa fa-cart-plus"></i>
+            Add to Cart
+        </a>
+        <a href="#">
+            <input type="text">
+            <i class="fa fa-search"></i>
+        </a>
+        <a href="mailto:sharulathar001@gmail.com">
+          Help
+            <i class="fa fa-fw fa-question"></i>
+           
+        </a>
+        <a href="login_form.html">
+          <i class="fa fa-fw fa-user"></i>
+         Login
+        </a>
+        </div>
+</div>
+
+
+<!-- end of  navigation menu -->
+
+<form name="loginForm" onsubmit="return validateForm()">
+     <h3 style="text-align: center;">Login</h3>
+    <div class="text">
+        <label for="username">Username:</label>
+    <input type="text" id="username" name="username">
+    <div id="usernameError" class="error"></div>
+    </div>
+  
+    <div class="text">
+        <label for="password">Password:</label>
+    <input type="password" id="password" name="password">
+    <div id="passwordError" class="error"></div>
+    </div>
+    <p style="margin-left: 250px;">Forgot password?</p>
+  
+
+    <button type="submit" value="Login"> Submit</button>
+    <div class="btn">
+        <p>New user : <a href="signup_form.html" style="color:rgb(34, 184, 234);text-decoration: none;">Create account?</a> </p>
+    </div>
+  </form>
+  
+</body>
+</html>

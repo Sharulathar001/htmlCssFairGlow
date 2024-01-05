@@ -1,0 +1,154 @@
+body{
+    background-image: url("images.html/body1.jpeg");
+    height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* css- Start of navigation menu */
+.navigationbar{
+    height:55px;
+    width:100%;
+    /* width:1250px; */
+    overflow:hidden;
+    background-color:#5F1854;
+    justify-content: space-between;
+    display: flex;
+    margin-right: 0px;
+}
+.navigationbar a{
+    float:left; /*The float CSS property places an element on the left or right side of its container, 
+                                 allowing text and inline elements to wrap around it. */
+    font-size:15px;
+    color:white;
+    text-align:center;
+    padding:15px;
+    font-family:'Times New Roman', Times, serif;
+    text-decoration: none;
+}
+
+
+a:hover{color:#DACC96;
+}
+.navigationbar input:hover {
+    background-color:#5F1854;
+    color:white;
+}
+/* css- End of navigation menu */
+
+.regform{
+    background-color:rgba(0,0,0, .5) ;
+    border:2px solid white;
+    border-radius: 15px;
+    align:center;
+    color:white;
+    margin:auto;
+    width:400px;
+    padding:15px;
+    height:auto;
+    margin-top:20px;
+}
+.field input{
+    display:block;
+    border:3px solid black;
+    padding:7px;
+    width:100%;
+    height:40px;
+    box-sizing: border-box;
+    border-radius: 10px;;
+}
+.field textarea{
+    padding:7px;
+    width:100%;
+    box-sizing: border-box;
+    border-radius: 10px;;
+}
+.field label{
+    display:flex;
+    font-size: 20px;
+    width: 100%;
+  margin: 8px ;
+
+
+}
+.gen{
+    display:flex;
+    
+}
+.gen .gender{
+    margin:0px;
+    
+    margin:25px;
+    text-align:left;
+    accent-color:brown;
+    height:20px;
+}
+.gen label{
+    padding:12px;
+    margin-top:15px
+}
+.but{
+    display:flex;
+    width:200px;
+    color:white;
+    margin:10px;
+    
+}
+.btn .logbtn{
+    background-color: rgba(0,0,0, .5);
+    border:3px solid white;
+    /* align:right; */
+    margin-left:120px ;
+    margin-top:20px;
+    width:150px;
+    padding:15px;
+    color:white;
+    border-radius:20px;
+}
+.logbtn:hover{
+    background-color: #5F1854;
+}
+input:focus{
+    background-color:#5F1854;
+    color:white;
+}
+ h3{
+    text-align:center;
+ }
+
+ .field span{
+position:left;
+margin-left: 20px;
+bottom:340px;
+right:17px;
+font-size:14px;
+color:red;
+ }
+ #submit-error{
+    color:red;
+ }
+ .field span i{
+    color:seagreen;
+ }
+  button{
+    margin-left:50px;
+ }
+
+
+ .account{
+    display: flex;
+    text-decoration: none;
+    padding-left: 50px;
+ }
+ .account a{
+    padding:10px;
+    text-decoration: none;
+    margin-top:7px;
+    color:white;
+ }
+
+ .account a:hover{
+    color:rgb(35, 191, 215);
+    text-decoration: underline;
+ }
+

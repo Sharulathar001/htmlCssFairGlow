@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="EyeMakeup.css">
+
+    <title>Document</title>
+    <script>
+        function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+
+function addToCart()
+{
+    alert("Login to add Products in cart");
+}
+</script>
+
+</head>
+<body>
+
+    <!-- Start of  navigation menu -->
+    <div class="navigationbar"> 
+        <div>
+            <a href="#">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a href="index.html"> 
+                <i class="fa fa-fw fa-home"></i>
+                 Home
+                </a>
+    </div>
+       <div id="navitem"> 
+        
+        <a href="Wishlist.html">
+            <i class="fa fa-fw fa-heart"></i>
+            Wish List
+        </a>
+        <a href="signup_form.html">
+            <i class="fa fa-fw fa-user"></i>
+            Sign-up /<a href="login_form.html">Login</a>
+        </a>
+        <a href="Add_to_cart.html">
+            <i class="fa fa-cart-plus"></i>
+            Add to Cart
+        </a>
+        <a href="#">
+            <input type="text">
+            <i class="fa fa-search"></i>
+        </a>
+        <a href="mailto:sharulathar001@gmail.com">
+            <i class="fa fa-fw fa-question"></i>
+            Help
+        </a>
+        </div>
+</div>
+
+<!-- end of  navigation menu -->
+    
+
+    <div class="image">
+        <figure>
+            <img src="http://cdn.shopify.com/s/files/1/1743/7443/products/MUR_0016_Makeup_Revolution_Aloe_Vera_Water_Lily_Soothing_Face_Mask_63b0442d-0476-4b2d-9758-16a81c59fb2c_grande.jpg?v=1612169744" alt="Foundation image" title="Foundation image" ><br>
+            <figcaption>
+                Aloe vera Face Mask 
+                <details>
+                    <summary>Product Details</summary>
+                    <p>
+                        Revolution Skincare Aloe Vera &<span id="dots">...</span><span id="more">Water Lily Soothing Face Mask</span> 
+                    </p>
+                    <button onclick="myFunction()" id="myBtn">Read more</button>
+                  </details>
+                <a href="Add_to_cart.html"><input type="button"  name="button"  id="addtocart"class="button"  value=" Add to Cart" onclick="addToCart()"> </a>
+                <a href="checkout.html"><input type="button"  name="button"  class="button"value=" Buy Now"> </a>
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="http://cdn.shopify.com/s/files/1/1743/7443/products/Pink_Clay_Detoxifying_Face_Mask_8d215e3a-9617-4b9b-a951-f01cdff92c17.jpg?v=1612170541" alt="Foundation image" title="Foundation image" ><br>
+            <figcaption>
+                Pink clay face mask 
+                <details>
+                    <summary>Product Details</summary>
+                    <p>
+                        Revolution Skincare Pink Clay Detoxifying Face Mask
+                    </p>
+                    <button onclick="myFunction()" id="myBtn">Read more</button>
+                  </details>
+                <a href="Add_to_cart.html"><input type="button"  name="button"  id="addtocart"class="button"  value=" Add to Cart" onclick="addToCart()"> </a>
+                <a href="checkout.html"><input type="button"  name="button"  class="button"value=" Buy Now"> </a>
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="https://m.media-amazon.com/images/I/51Ol4xYq5-L._SY355_.jpg" alt="Foundation image" title="Foundation image" ><br>
+            <figcaption>
+                Charcoal Peel Off Face Mask
+                <details>
+                    <summary>Product Details</summary>
+                    <p>
+                        The Man Company Activated Charcoal Peel Off Face Mask<span id="dots">...</span><span id="more"> for Men | Deep 
+                            Cleansing | Blackhead / Whitehead & Dead Skin Removal | Paraben & Sulphate Free - 100gm</span>
+                    </p>
+                    <button onclick="myFunction()" id="myBtn">Read more</button>
+                  </details>
+                <a href="Add_to_cart.html"><input type="button"  name="button"  id="addtocart"class="button"  value=" Add to Cart" onclick="addToCart()"> </a>
+                <a href="checkout.html"><input type="button"  name="button"  class="button"value=" Buy Now"> </a>
+            </figcaption>
+        </figure>
+
+        <figure>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMbmIZ6-0Lkej46J--RCrtF4lzoy9M10nyuQ&usqp=CAU" alt="Foundation image" title="Foundation image" ><br>
+            <figcaption>
+                Rose Gold Sparkling Peel-Off Face Mask
+                <details>
+                    <summary>Product Details</summary>
+                    <p>
+                        Azure Skincare Rose Gold Sparkling Peel-Off Face Mask
+                    </p>
+                    <button onclick="myFunction()" id="myBtn">Read more</button>
+                  </details>
+                <a href="Add_to_cart.html"><input type="button"  name="button"  id="addtocart"class="button"  value=" Add to Cart" onclick="addToCart()"> </a>
+                <a href="checkout.html"><input type="button"  name="button"  class="button"value=" Buy Now"> </a>
+            </figcaption>
+        </figure>
+
+        <figure>
+            <img src="https://assets.vogue.in/photos/5db18afa177d2f000874658f/master/w_1600%2Cc_limit/UMA-Oils-Mask.jpg" alt="Foundation image" title="Foundation image" ><br>
+            <figcaption>
+                Face mask
+                <details>
+                    <summary>Product Details</summary>
+                    <p>
+                        There are a lot of buzzy ingredients out there (matcha and CBD, we’re looking at you), but saffron is a classic that keeps 
+                        <span id="dots">...</span><span id="more">coming back to the limelight time and again. Likened to turmeric (but less messy, 
+                            with a reduced chance of stains), saffron is an antioxidant and anti-inflammatory ingredient that also boasts excellent
+                             hydrating and anti-ageing properties. One of the most expensive spices in the world, it also features a rich, warm scent that results in a covetable beauty product when it’s bottled in one.</span>
+                    </p>
+                    <button onclick="myFunction()" id="myBtn">Read more</button>
+                  </details>
+                <a href="Add_to_cart.html"><input type="button"  name="button"  id="addtocart"class="button"  value=" Add to Cart" onclick="addToCart()"> </a>
+                <a href="checkout.html"><input type="button"  name="button"  class="button"value=" Buy Now"> </a>
+            </figcaption>
+        </figure>
+
+        
+
+
+            </div>
+</body>
+</html>

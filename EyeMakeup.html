@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="EyeMakeup.css">
+
+    <title>Document</title>
+    <script>
+        function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+
+</head>
+<body>
+
+    <!-- Start of  navigation menu -->
+    <div class="navigationbar"> 
+        <div>
+            <a href="#">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a href="index.html"> 
+                <i class="fa fa-fw fa-home"></i>
+                 Home
+                </a>
+    </div>
+       <div id="navitem"> 
+        
+        <a href="Wishlist.html">
+            <i class="fa fa-fw fa-heart"></i>
+            Wish List
+        </a>
+        <a href="login_form.html">
+            <i class="fa fa-fw fa-user"></i>
+           Login
+          </a>
+        <a href="Add_to_cart.html">
+            <i class="fa fa-cart-plus"></i>
+            Add to Cart
+        </a>
+        <a href="#">
+            <input type="text">
+            <i class="fa fa-search"></i>
+        </a>
+        <a href="mailto:sharulathar001@gmail.com">
+            <i class="fa fa-fw fa-question"></i>
+            Help
+        </a>
+        </div>
+</div>
+
+<!-- end of  navigation menu -->
+    
+
+    <div class="image">
+        <figure>
+            <img src="images.html/d1.jpeg" alt="Foundation image" title="Foundation image" ><br>
+            <figcaption>
+                Mascara 
+                <details>
+                    <summary>Product Details</summary>
+                    <p>
+                        Volumizing & Lengthening Mascara is an ultra-black mascara that<span id="dots">...</span><span id="more"> gives you anexaggerated lash effect every time you wear it. This gorgeously rich, 
+                        jet black mascara screams drama with its dense bristled applicator that plumps and coats your lashes from root to tip without clumping.</span>
+                    </p>
+                    <button onclick="myFunction()" id="myBtn">Read more</button>
+                  </details>
+                <a href="Add_to_cart.html"><input type="button"  name="button"  id="addtocart"class="button"  value=" Add to Cart"> </a>
+                <a href="checkout.html"><input type="button"  name="button"  class="button"value=" Buy Now"> </a>
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="images.html/d2.jpeg" alt="Foundation image" title="Foundation image" ><br>
+            <figcaption>
+                Kajal 
+                <details>
+                    <summary>Product Details</summary>
+                    <p>
+                        Be it rain or trouble pouring on you, a waterproof eyeliner <span id="dots">...</span><span id="more">will always be with you! , Colorbar's Precision Waterproof Eyeliner defines your eyes .</span>
+                    </p>
+                    <button onclick="myFunction()" id="myBtn">Read more</button>
+                  </details>
+                <a href="Add_to_cart.html"><input type="button"  name="button"  id="addtocart"class="button"  value=" Add to Cart"> </a>
+                <a href="checkout.html"><input type="button"  name="button"  class="button"value=" Buy Now"> </a>
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="images.html/d3.jpeg" alt="Foundation image" title="Foundation image" ><br>
+            <figcaption>
+                Eyelash Extension
+                <details>
+                    <summary>Product Details</summary>
+                    <p>
+                        A natural formula for foundation that gives an even glow, all while <span id="dots">...</span><span id="more">keeping your skin nourished and super healthy.</span>
+                    </p>
+                    <button onclick="myFunction()" id="myBtn">Read more</button>
+                  </details>
+                <a href="Add_to_cart.html"><input type="button"  name="button"  id="addtocart"class="button"  value=" Add to Cart"> </a>
+                <a href="checkout.html"><input type="button"  name="button"  class="button"value=" Buy Now"> </a>
+            </figcaption>
+        </figure>
+
+        <figure>
+            <img src="images.html/d4.jpeg" alt="Foundation image" title="Foundation image" ><br>
+            <figcaption>
+                Gel kajal combo
+                <details>
+                    <summary>Product Details</summary>
+                    <p>
+                        IMAGIC Gel Eyeliner, Waterproof Makeup Gel Eye Liner With <span id="dots">...</span><span id="more"> Brush ( 4g ) (black 01). Combo offer avail soon. don't miss out.</span>
+                    </p>
+                    <button onclick="myFunction()" id="myBtn">Read more</button>
+                  </details>
+                <a href="Add_to_cart.html"><input type="button"  name="button"  id="addtocart"class="button"  value=" Add to Cart"> </a>
+                <a href="checkout.html"><input type="button"  name="button"  class="button"value=" Buy Now"> </a>
+            </figcaption>
+        </figure>
+
+        <figure>
+            <img src="images.html/d5.jpeg" alt="Foundation image" title="Foundation image" ><br>
+            <figcaption>
+                Gel kajal Royal black
+                <details>
+                    <summary>Product Details</summary>
+                    <p>
+                        IMAGIC Gel Eyeliner, Waterproof Makeup Gel Eye Liner <span id="dots">...</span><span id="more"> With Brush ( 4g ) (black 01)</span>
+                    </p>
+                    <button onclick="myFunction()" id="myBtn">Read more</button>
+                  </details>
+                <a href="Add_to_cart.html"><input type="button"  name="button"  id="addtocart"class="button"  value=" Add to Cart"> </a>
+                <a href="checkout.html"><input type="button"  name="button"  class="button"value=" Buy Now"> </a>
+            </figcaption>
+        </figure>
+
+        <figure>
+            <img src="images.html/d6.jpeg" alt="Foundation image" title="Foundation image" ><br>
+            <figcaption>
+                Eye liquid liner
+                <details>
+                    <summary>Product Details</summary>
+                    <p>
+                        Be it rain or trouble pouring on you, a waterproof eyeliner will <span id="dots">...</span><span id="more"> always be with you! , Colorbar's Precision Waterproof Eyeliner defines your eyes .</span>
+                    </p>
+                    <button onclick="myFunction()" id="myBtn">Read more</button>
+                  </details>
+                <a href="Add_to_cart.html"><input type="button"  name="button"  id="addtocart"class="button"  value=" Add to Cart"> </a>
+                <a href="checkout.html"><input type="button"  name="button"  class="button"value=" Buy Now"> </a>
+            </figcaption>
+        </figure>
+
+        <figure>
+            <img src="images.html/d7.jpeg" alt="Foundation image" title="Foundation image" ><br>
+            <figcaption>
+                Liquid color liner 
+                <details>
+                    <summary>Product Details</summary>
+                    <p>
+                        Colored eyeliners can brighten up your eyes in <span id="dots">...</span><span id="more"> seconds. Available in multicolors.Use it and enjoy it.</span>
+                    </p>
+                    <button onclick="myFunction()" id="myBtn">Read more</button>
+                  </details>
+                <a href="Add_to_cart.html"><input type="button"  name="button"  id="addtocart"class="button"  value=" Add to Cart"> </a>
+                <a href="checkout.html"><input type="button"  name="button"  class="button"value=" Buy Now"> </a>
+            </figcaption>
+        </figure>
+
+
+
+            </div>
+</body>
+</html>

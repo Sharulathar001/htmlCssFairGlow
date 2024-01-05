@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup_form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Online Beauty store</title>
+
+
+    
+    <script type="text/javascript">
+		function valid()
+		{
+			var username=document.getElementById("username");
+			var error1=document.getElementById("name-error");
+			if(username.value=="")
+			{
+				error1.innerHTML="User name cannot be empty";
+				username.focus();
+				return false;
+			}
+
+			var password=document.getElementById("password");
+			var error2=document.getElementById("password-error");
+			if(password.value=='')
+			{
+				error2.innerHTML="password cannot be empty empty";
+				password.focus();
+				return false;
+			}
+        }
+            /*var emailid=document.getElementById("emailid");
+			var error3=document.getElementById("mail-error");
+			if(emailid.value=="")
+			{
+				error3.innerHTML="MailId cannot be empty";
+				mailid.focus();
+				return false;
+			}
+
+            var tel=document.getElementById("tel");
+			var error4=document.getElementById("phone-error");
+			if(telvalue.length<10)
+			{
+				error4.innerHTML="Invalid mobile number";
+				tel.focus();
+				return false;
+			}
+
+            var address=document.getElementById("address");
+			var error5=document.getElementById("address-error");
+			if(address.value=="")
+			{
+				error5.innerHTML="Address can't be empty";
+				address.focus();
+				return false;
+			}*/
+            
+			function valid() {
+  // Get form values
+  var username = document.getElementById("username").value;
+  var password = document.getElementById("password").value;
+  var email = document.getElementById("emailid").value;
+  var phone = document.getElementById("tel").value;
+  var address = document.getElementById("address").value;
+
+  // Validate username\
+  if(username=="")
+  {
+    document.getElementById("name-error").innerHTML = "Username is required";
+    return false;
+  }
+  else if (username.length < 5) {
+    document.getElementById("name-error").innerHTML = "Username must be at least 5 characters long.";
+    return false;
+  } else {
+    document.getElementById("name-error").innerHTML = "";
+  }
+
+  // Validate password
+  if(password=="")
+  {
+    document.getElementById("password-error").innerHTML = "Password is required";
+    return false;
+  }
+  else if (password.length < 8) {
+    document.getElementById("password-error").innerHTML = "Password must be at least 8 characters long.";
+    return false;
+  } else {
+    document.getElementById("password-error").innerHTML = "";
+  }
+
+  // Validate email address
+  var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if(emailPattern=="")
+  {
+    document.getElementById("name-error").innerHTML = "Email is required";
+    return false;
+  }
+  else if (!emailPattern.test(email)) {
+    document.getElementById("email-error").innerHTML = "Please enter a valid email address.";
+    return false;
+  } else {
+    document.getElementById("email-error").innerHTML = "";
+  }
+
+  // Validate phone number
+  if (phone.length !== 10 || isNaN(phone)) {
+    document.getElementById("phone-error").innerHTML = "Please enter a valid phone number.";
+    return false;
+  } else {
+    document.getElementById("phone-error").innerHTML = "";
+  }
+
+  // Validate address
+  if (address.length === 0) {
+    document.getElementById("address-error").innerHTML = "Please enter your address.";
+    return false;
+  } else {
+    document.getElementById("address-error").innerHTML = "";
+  }
+
+  // All fields are valid
+  return true;
+}
+function submitForm() {
+  const xhr = new XMLHttpRequest();
+  xhr.open("POST", "submit.php", true);
+  xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      // Handle response from server
+    }
+  };
+
+  const name = document.getElementById("username").value;
+  const password = document.getElementById("password").value;
+  
+
+  const data = `name=${name}&email=${email}`;
+  xhr.send(data);
+}
+
+	</script>
+</head>
+
+
+<body >
+
+   <!-- Start of  navigation menu -->
+   <div class="navigationbar"> 
+    <div>
+        <a href="#">
+            <i class="fa fa-bars"></i>
+        </a>
+        <a href="index.html"> 
+            <i class="fa fa-fw fa-home"></i>
+             Home
+            </a>
+</div>
+   <div id="navitem"> 
+    
+    <a href="Wishlist.html">
+        <i class="fa fa-fw fa-heart"></i>
+        Wish List
+    </a>
+    <a href="login_form.html">
+        <i class="fa fa-fw fa-user"></i>
+       Login
+      </a>
+    <a href="Add_to_cart.html">
+        <i class="fa fa-cart-plus"></i>
+        Add to Cart
+    </a>
+    <a href="#">
+        <input type="text">
+        <i class="fa fa-search"></i>
+    </a>
+    <a href="mailto:sharulathar001@gmail.com">
+        <i class="fa fa-fw fa-question"></i>
+        Help
+    </a>
+    </div>
+</div>
+
+<!-- end of  navigation menu -->
+
+
+    <!-- start of login/sign-up form -->
+    <div class="regform" >
+        <form method="post" action="connect.php" onsubmit="return valid()">
+        
+        <h3 >SignUp</h3><br>
+        <div class="field" >
+            <label for="username" >
+                User Name:
+            </label>
+            <input type="text" id="username" name="username" class="type" placeholder="username..........." onkeyup="validateName()" >
+            
+             <span id="name-error"></span>
+        </div>
+        <div class="field" >
+            <label for="password" >
+                Password:
+            </label>
+            <input type="password" class="type" id="password" name="password" placeholder="Password...........">
+            <span id="password-error"></span>
+        </div>
+        <div class="field" >
+            <label for="emailid">
+                Email:
+            </label>
+            <input type="text" class="type" id="emailid" name="emailid" placeholder="abcdef@1234gmail.com">
+            <span id="email-error"></span>
+        </div>
+        <div class="gen">
+            <input type="radio" class="gender"  name="gender">
+            <label for="gender">Male</label>
+            <input type="radio" name="gender" class="gender" >
+            <label for="gender">Female</label>
+        </div>
+        <div class="field">
+            <label for="dob" >
+                Date of Birth:
+            </label>
+            <input type="date" id="dob" name="dob">
+        </div>
+        <div class="field">
+            <label for="tel" >
+                Mobile Number:
+            </label>
+            <input type="tel" class="type" id="tel" maxlength="10" name="tel">
+            <span id="phone-error"></span>
+        </div>
+        <div class="field">
+            <label for="address" >
+                Address:
+            </label>
+            <textarea rows="5" cols="20" id="address" placeholder="Address......." name="address" class="center" ></textarea>
+            <span id="address-error"></span>
+        </div>
+            <!-- submit button -->
+            <div class="btn">
+                
+            <button class="logbtn"   onclick="event()" > Sign-up</button>
+            <span id="submit-error"></span>
+        </div>
+        <br>
+        <div class="account">
+            <p  > Already have an account? </p>
+            <a href="login_form.html" >
+                Login  
+            </a>
+        </div>
+           <!-- submit button -->
+
+      </div>
+    </form>
+    <!-- end of login/sign-up form -->
+
+</body>
+</html>

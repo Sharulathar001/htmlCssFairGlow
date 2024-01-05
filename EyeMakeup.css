@@ -1,0 +1,94 @@
+body{ 
+    padding:0;
+    margin:auto;
+    background-color:#F1BBD5;
+    background-image: url("images.html/Moisturizer.webp");
+    background-position: center; 
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    position: relative;
+    padding:0px;
+    padding-left: 5px;
+    padding-right: 5px;
+  background-size: auto;
+}
+
+/* css- Start of navigation menu */
+.navigationbar{
+    height:55px;
+    width:100%;
+    /* width:1250px; */
+    overflow:hidden;
+    background-color:#5F1854;
+    justify-content: space-between;
+    display: flex;
+    box-sizing: border-box;
+    margin-right: 0px;
+    margin-left:0px;
+}
+.navigationbar a{
+    float:left; /*The float CSS property places an element on the left or right side of its container, 
+                                 allowing text and inline elements to wrap around it. */
+    font-size:15px;
+    color:white;
+    text-align:center;
+    padding:15px;
+    font-family:'Times New Roman', Times, serif;
+    text-decoration: none;
+}
+
+a:hover{color:#DACC96;
+}
+.navigationbar input:hover {
+    background-color:#5F1854;
+    color:white;
+}
+
+/* css- End of navigation menu */
+
+img{
+    width:200px;
+    height:200px;
+    border:2px solid #9D5353;
+    box-shadow: 5px 2px 2px;
+}
+.image{
+    display: grid;
+    padding: 20px;
+    width:100%;
+    box-shadow: 10px 10px 10px #9D5353;
+    border-radius: 10px;
+  grid-template-columns: auto auto auto auto;
+  padding: 10px;
+  grid-gap:10px 5px;
+}
+figcaption{
+    text-align: center;
+    font-weight: 700;
+    margin:5px;
+}
+/* Css-End of image style */
+
+/* Add to cart and wishlist */
+.button{
+    display: block;
+    width:80%;
+    border-radius: 20px;
+    padding:5px;
+    margin:8px;
+    grid-template-columns: auto auto;
+    background-color:white;
+    text-decoration:none;
+    color:#5F1854;
+}
+.button:hover{
+    background-color:#5F1854;
+    color:white;
+}
+
+.image a{
+    text-decoration: none;
+}
+/* Add to cart and wishlist */
+
+#more {display: none;}

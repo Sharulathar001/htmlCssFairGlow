@@ -1,0 +1,342 @@
+/* body */
+body{ 
+    padding:0;
+    margin:auto;
+    background-color:#F1BBD5;
+    background-image: url("images.html/Moisturizer.webp");
+    background-position: center; 
+    background-repeat: no-repeat;
+    padding:0px;
+    padding-left: 5px;
+    padding-right: 5px;
+  background-size: auto;
+}
+
+/* css- Start of navigation menu */
+.navigationbar{
+    height:55px;
+    width:100%;
+    /* width:1250px; */
+    overflow:hidden;
+    background-color:#5F1854;
+    justify-content: space-between;
+    display: flex;
+    box-sizing: border-box;
+    margin-right: 0px;
+    margin-left:0px;
+}
+.navigationbar a{
+    float:left; /*The float CSS property places an element on the left or right side of its container, 
+                                 allowing text and inline elements to wrap around it. */
+    font-size:15px;
+    color:white;
+    text-align:center;
+    padding:15px;
+    font-family:'Times New Roman', Times, serif;
+    text-decoration: none;
+}
+a:hover{color:#DACC96;
+}
+.navigationbar input:hover {
+    background-color:#5F1854;
+    color:white;
+}
+
+.navigationbar .navigationbar{
+    margin-left:-0px;
+}
+/* css- End of navigation menu */
+
+
+
+
+/* Slideshow container */
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade { /*animation code */
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+  .slideshow-container img{
+    border-radius: 10px;
+    height:300px;
+  }
+  .slideshow-container .text{
+    color:#520726;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:x-large;
+    font-weight: 600;
+    width:auto;
+    text-align: center;
+    margin-left:450px;
+  }
+
+
+
+
+.header{
+    font-size:1.7em;
+    text-align:center;
+}
+
+/* Css-Start of grid  */
+.grid-container{
+    display: grid;
+    border: 5px solid #632626;
+    padding: 20px;
+    width:50%;
+    box-shadow: 10px 10px 10px black;
+    border-radius: 10px;
+    margin-left: 300px;
+    /* grid-template-rows: 100px 80px 150px; */
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+  gap:10px ; 
+}
+.grid-container img{
+  width:70px;
+   height:70px;
+}
+
+.grid-container a{
+    text-decoration: none;
+    text-align: center;
+    font-weight: 600;
+    color:#520726;
+}
+
+.grid-container a:hover{
+    background-color:#5F1854;
+    border-color: #ffffff;
+    border-radius: 30px;
+    color:#ffffff;
+}
+.product{
+    border: 5px solid #632626;
+    margin:5px;
+    padding:20px 10px;
+    border-radius: 10px;
+    /* box-shadow: 5px 5px 50px #632626; */
+    grid-template-columns:100px 200px 150px;
+    grid-template-rows: 250px 100px 150px;
+    text-align:center;
+}
+/* Css-End of grid  */
+
+
+/* Css-Start of image style */
+/* img,figcaption,.conatiner{
+  border: 2px solid purple;
+} */
+img{
+  width: auto;
+}
+.image{
+    display: grid;
+    padding: 20px;
+    width:100%;
+    align-items: center;
+    box-shadow: 10px 10px 10px #9D5353;
+    border-radius: 10px;
+  grid-template-columns:33.4% 33.4% 33.4%;
+  padding: 10px;
+  grid-gap:10px 5px;
+}
+a.input{
+  width: 100%;
+}
+figcaption{
+    text-align: center;
+    font-weight: 700;
+    margin:5px;
+}
+/* Css-End of image style */
+
+/* Add to cart and wishlist */
+.button{
+    display: block;
+    width:80%;
+    border-radius: 20px;
+    padding:5px;
+    margin:8px;
+    grid-template-columns: auto auto;
+    background-color:white;
+    text-decoration:none;
+    color:#5F1854;
+}
+.button:hover{
+    background-color:#5F1854;
+    color:white;
+}
+
+.image a{
+    text-decoration: none;
+}
+/* Add to cart and wishlist */
+
+
+.head{
+          font-weight: bold;
+          font-size:x-large;
+          text-align:center;
+          margin:30px;
+}
+
+
+p{
+    font-size: smaller;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-justify: auto;
+}
+
+#more {display: none;}
+
+figure{
+  border: 2px solid rgb(88, 22, 88);
+}
+figure.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+figure.center img {
+  border: 2px solid black;
+  padding: 10px;
+  max-width: 100%;
+}
+
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .icon {
+    color: white;
+    font-size: 20px;
+  
+    top: 50%;
+    left: 50%;
+    
+    text-align: right;
+  
+    margin-left:160px;
+    /* padding-bottom: -100px; */
+     /* margin-bottom:100px; */
+  }
+  .icon:hover{
+    color:red;
+    
+  }
+  
+  
+
+
+
+  .conatiner{
+    border:2px solid purple;
+  }
+
+
+  
